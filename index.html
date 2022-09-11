@@ -28,12 +28,25 @@
                     aria-label="Recipient's username" aria-describedby="button-addon2">
                 <button onclick="searchFood()" class="btn btn-secondary border-0" type="button"
                     id="button-search">Search</button>
+
             </div>
         </div>
     </section>
+    <div id="spinner" class="text-center ">
+        <div class="lds-ring">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
     <!-- Card Area -->
     <section>
-        <div class="container">
+        <div class="container ">
+            <div id="notify-section" class="notify-section px-4 py-5 text-white">
+                <p id="notify-fail" class="notify fs-1 text-center">❌ This Item Not Available</p>
+            </div>
+
             <div id="search-result" class="row row-cols-1 row-cols-md-4 g-4">
 
             </div>
