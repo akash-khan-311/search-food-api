@@ -2,6 +2,15 @@
 const searchFeild = document.getElementById('search-feild');
 const searchResult = document.getElementById('search-result');
 const error = document.getElementById('notify-section');
+const searchBtn = document.getElementById('button-search')
+
+
+//Press Enter Then Show Result
+searchFeild.addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+        searchBtn.click();
+    }
+});
 
 
 
